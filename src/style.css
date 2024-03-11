@@ -1,6 +1,8 @@
 :root {
-    --color-background: #e4eee9;
-    --color-light: rgba(129, 129, 129, 0.18);
+    --color-background: #fff;
+    --color-second-background: antiquewhite;
+    --color-red: #FF4433;
+    --color-shadow: rgba(129, 129, 129, 0.18);
     --color-dark-variant: #748a7a;
     --color-font: #111d14;
     --color-white: #fff;
@@ -74,6 +76,7 @@ header {
     padding: 10px;
     position: sticky;
     top: 0;
+    box-shadow: var(--box-shadow);
     
 }
 
@@ -116,60 +119,35 @@ footer a{
     text-decoration: none;
 }
 
-.nav-wrapper {
-    /*display: flex;
+.circles {
+    display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1.4rem;*/
- display: grid;
-    grid-template-columns: auto 1fr  auto  auto auto; /* First element takes up available space */
-    gap: 2rem;
-    
     padding: 10px;
+    margin-top: 40px;
     
 }
 
-.nav-wrapper a {
+.main-text-area{
+    margin-top: 50px;
+    background-color:antiquewhite;
+}
+
+.circles {
+    height: 50vh; /* Adjust as needed */
+}
+
+.circle-svg {
+    width: 200px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+    fill: var(--color-red); /* Remove fill color from circle */
+    stroke: var(--color-red);
+    stroke-width: 4;
+}
+
+.circle-svg text {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Set your desired font size */
+    text-anchor: middle;
+    dominant-baseline: middle;
     color: black;
 }
-/*
-.nav {
-    overflow: hidden; }
-  .nav a {
-    float: left;
-    margin: 10px;
-    display: block; }
-  .nav #menu-toggle {
-    display: none; }
-  @media screen and (max-width: 600px) {
-    .nav a:not(:first-child) {
-      display: none; }
-    .nav a#menu-toggle {
-      float: right;
-      display: block; } }
-  @media screen and (max-width: 600px) {
-    .nav.nav--open {
-      position: relative; }
-    .nav.nav--open #menu-toggle {
-      position: absolute;
-      right: 0;
-      top: 0; }
-    .nav.nav--open a {
-      float: none;
-      display: block;
-      text-align: left; } }
-  .menu-toggle__bar1, .menu-toggle__bar2, .menu-toggle__bar3 {
-    width: 21px;
-    height: 3px;
-    background-color: #000000;
-    margin: 4px 0;
-    transition: 0.3s; }
-  .menu-toggle--open .menu-toggle__bar1 {
-    transform: translate(0, 7px) rotate(-45deg); }
-  .menu-toggle--open .menu-toggle__bar2 {
-    opacity: 0; }
-  .menu-toggle--open .menu-toggle__bar3 {
-    transform: translate(0, -7px) rotate(45deg);}
-*/
-
-
