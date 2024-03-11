@@ -9,6 +9,7 @@
   <link rel="icon" href="favicon.png">
 </head>
 <body>
+   <!--<div class="container">-->
 <header>
     <div class="logo">
         <!-- Replace the placeholder image URL with your actual logo -->
@@ -26,16 +27,20 @@
     <div class="circles">
     <svg class="circle-svg">
       <circle cx="100" cy="100" r="80" />
+      <image href="assets/gcmenu.png" x="60" y="60" width="80" height="80" />
       <text x="100" y="100">Chat GUI</text>
   </svg>
   <svg width="200" height="200">
     <circle cx="100" cy="100" r="80" stroke="red" stroke-width="4" fill="red" />
+    <image href="assets/gcmenu.png" x="10" y="10" width="180" height="180" />
     <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="black">Easy to use</text>
   </svg>
-  <svg width="200" height="200">
-    <circle cx="100" cy="100" r="80" stroke="red" stroke-width="4" fill="red" />
-    <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="black">Fast</text>
-  </svg>
+  <div class="circle">
+    <div class="circle-image">
+        <img src="assets/gcmenu.png" alt="Picture of the Menu">
+    </div>
+    <div class="circle-text">Chat GUI</div>
+</div>
 </div>
 <div class="main-text-area">
   <h1>Description</h1>
@@ -62,5 +67,6 @@
     element.classList.toggle("menu-toggle--open");
   }
   </script>-->
+<!--</div>-->
 </body>
 </html>
