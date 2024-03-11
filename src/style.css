@@ -235,7 +235,22 @@ footer a{
   }
 */
 
+.features-main-container{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto; /* First row takes remaining space */
+    grid-template-columns: 3vw 5vw auto;
+    height: 100%;
+    grid-template-areas:
+    'graph1 branch1 header'
+    'graph2 branch2 content1'
+    'graph3 branch3 content2'
+    'graph4 branch4 content3'
+    'graph5 branch5 content4'
+    'graph6 branch6 content5';
+}
+
 .dot {
+	grid-area: graph;
 	margin-left: 2vw;
 	position: relative;
 	background-color:#fff;
@@ -262,13 +277,57 @@ footer a{
 	position: relative;
 	background-color:#fff;
 	width: 0.25vw;
-	height: 5vh;
+	height: 100%;
 }
 
 .line:before{	
 	position: absolute;
 	content: "";
 	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index:-1;
+	box-shadow: 0px 0px 0px 0.25vw #FF4433;
+}
+
+.line2 {
+	margin-left: 0.45vw;
+	position: relative;
+	background-color:#fff;
+	width: 0.25vw;
+	height: 3vw;
+	transform: rotate(-45deg);
+}
+
+.line2:before{	
+	position: absolute;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index:-1;
+	box-shadow: 0px 0px 0px 0.25vw #FF4433;
+}
+
+.dot2 {
+	margin-left: 1.45vw;
+	position: relative;
+	background-color:#fff;
+	border-radius: 50%;
+	width: 0.75vw;
+	height: 0.75vw;
+	margin-top: 2.4vw;
+}
+
+.dot2:before{	
+	position: absolute;
+	content: "";
+	position: absolute;
+	border-radius: 50%;
 	top: 0;
 	bottom: 0;
 	left: 0;
