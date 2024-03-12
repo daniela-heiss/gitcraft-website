@@ -51,17 +51,18 @@ header:hover {
 
 header nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     width: min(50%, 600px);
-    padding-right: 100px;
+    padding-right: 5%;
 }
 
 #title-name {
     color: var(--text_sec);
     font-size: 50px;
     font-weight: 700;
-    position: relative;
+    position: absolute;
     text-decoration: none;
+    margin-left:11%;
 }
 
 header nav a {
@@ -70,6 +71,8 @@ header nav a {
     font-weight: 700;
     position: relative;
     text-decoration: none;
+    margin-right: 7%;
+
 }
 
 main {
@@ -269,4 +272,8 @@ footer a {
 
 .featurescontent {
     margin-top: 1vw;
+}
+
+.logo{
+    margin-left: 5%;
 }
