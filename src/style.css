@@ -277,3 +277,13 @@ footer a {
 .logo{
     margin-left: 5%;
 }
+
+.main-text-area h1{
+    text-align: center;
+}
+
+.main-text-area p{
+    text-align: center;
+    margin-left: 7%;
+    margin-right: 7%;
+}
