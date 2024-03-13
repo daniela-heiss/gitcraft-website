@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Hello, world!</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="stylesheet" type="text/css" href="src/style.css" />
-  <link rel="icon" href="favicon.png">
+    <meta charset="UTF-8" />
+    <title>Gitcraft Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+    <link rel="icon" href="favicon.png">
 </head>
+
 <body>
-<header>
-  <nav class="nav" id="nav">
-    <a href="#home">Logo</a>
-    <a href="#menu-item-1">Menu Item 1</a>
-    <a href="#menu-item-2">Menu Item 2</a>
-    <a href="#menu-item-3">Menu Item 3</a>
-    <a href="javascript:void(0);" id="menu-toggle" onclick="togglemenu()">
-      <div class="menu-toggle__bar1"></div>
-      <div class="menu-toggle__bar2"></div>
-      <div class="menu-toggle__bar3"></div>
-    </a>
-  </nav>
-</header>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img width="100px" height="auto" src="./assets/GC-Logo.png"></a>
+        </div>
+        <a href="index.html" id="title-name">Gitcraft</a>
+        <nav class="nav">
+            <a href="src/features.html">Feature List</a>
+            <a href="#menu-item-2">Download</a>
+            <a href="https://gitlab.rlp.net/top/24s/vcmc/gitcraft/-/wikis/home">Wiki</a>
+            <a href="https://gitlab.rlp.net/top/24s/vcmc/gitcraft">Code</a>
+        </nav>
+    </header>
+    <main>
+        <div class="index-main-container">
+            <div class="circle-row">
+                <div class="circle-box">
+                    <div class="circle">
+                        <div class="circle-image">
+                            <img src="assets/gcmenu.png" alt="Picture of the Menu">
+                        </div>
+                    </div>
+                    <div class="circle-text">
+                        Chat-GUI
+                    </div>
+                </div>
+            
+                <div class="circle-box">
+                    <div class="circle">
+                        <div class="circle-image">
+                            <img src="assets/gcmenu.png" alt="Picture of the Menu">
+                        </div>
+                    </div>
+                    <div class="circle-text">
+                        Chat-GUI
+                    </div>
+                </div>
 
-  <main>
-  <h1>Hello, world!</h1>
-</main>
+                <div class="circle-box">
+                    <div class="circle">
+                        <div class="circle-image">
+                            <img src="assets/gcmenu.png" alt="Picture of the Menu">
+                        </div>
+                    </div>
+                    <div class="circle-text">
+                        Chat-GUI
+                    </div>
+                </div>
 
-  <footer>
-    <small>© <script>document.write(new Date().getFullYear())</script> Your company name. All Rights Reserved.</small>
-  </footer>
-  <!--<script>
-  function togglemenu() {
-    var x = document.getElementById("nav");
-    if (x.className === "nav") {
-      x.className += " nav--open";
-    } else {
-      x.className = "nav";
-    }
-    var element = document.getElementById("menu-toggle");
-    element.classList.toggle("menu-toggle--open");
-  }
-  </script>-->
+            </div>
+    
+        <div class="main-text-area">
+            <h1>Description</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.hs-worms.de/">HS Worms</a>
+        <a href="index.html">Gitcraft @ 2024</a>
+        <a href="https://gitlab.rlp.net/top/24s/vcmc/gitcraft/-/wikis/home">Datenschutz & Impressum</a>
+    </footer>
 </body>
+
 </html>
