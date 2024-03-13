@@ -1,10 +1,7 @@
 :root {
     --color-background: #fff;
     --color-second-background: #FBE9E9;
-    --color-second-background: #FBE9E9;
     --color-red: #FF4433;
-    --color-shadow: rgba(90, 90, 90, 0.18);
-    --color-font: #000000;
     --color-shadow: rgba(90, 90, 90, 0.18);
     --color-font: #000000;
     --color-white: #fff;
@@ -20,7 +17,6 @@ body {
     grid-gap: 0;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto;
-    grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header_00"
         "main_00"
@@ -32,21 +28,18 @@ body {
     overflow-x: hidden;
     color: var(--color-font);
     background-color: var(--color-background);
-    color: var(--color-font);
-    background-color: var(--color-background);
     font-family: Roboto,
-    "Helvetica Neue",
-    sans-serif;
+        "Helvetica Neue",
+        sans-serif;
 }
 
 header {
     grid-area: header_00;
     align-items: center;
     background-color: var(--color-red);
-    background-color: var(--color-red);
     display: flex;
     justify-content: space-between;
-    height: 8vh;
+    padding: 10px;
     position: sticky;
     top: 0;
     transition: all 0.3s ease;
@@ -113,19 +106,6 @@ header nav {
     align-items: center;
 }
 
-.logo{
-    height: 100%;
-    margin-left:5.25vw;
-}
-
-#title-name {
-    color: var(--color-font);
-    font-size: 50px;
-    font-weight: 700;
-    position: relative;
-    text-decoration: none;
-}
-
 header nav a {
     color: var(--color-link);
     font-size: 20px;
@@ -181,16 +161,13 @@ footer a {
 }
 
 .circle-row {
-.circle-row {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     margin-top: 40px;
 
-
 }
 
-.circle-box {
 .circle-box {
     display: flex;
     flex-direction: column;
@@ -212,12 +189,8 @@ footer a {
     width: 200px;
     height: 200px;
 
-    width: 200px;
-    height: 200px;
-
     /* (B) CIRCLE - 50% RADIUS */
     border-radius: 50%;
-
 
     /* (C) COSMETIC - BACKGROUND COLOR */
     background: var(--color-red);
@@ -226,13 +199,6 @@ footer a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: var(--box-shadow);
-}
-
-.circle:hover {
-    box-shadow: none;
-}
     transition: all 0.3s ease;
     box-shadow: var(--box-shadow);
 }
@@ -250,18 +216,9 @@ footer a {
     height: 100%;
     width: 100%;
     object-fit: contain
-    height: 150px;
-    width: 150px;
-}
-
-.circle-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain
 }
 
 .circle-text {
-    margin-top: 20px;
     margin-top: 20px;
     font-size: 14px;
 }
@@ -290,13 +247,6 @@ footer a {
     border-radius: 50%;
     width: 0.75vw;
     height: 0.75vw;
-    grid-area: graph;
-    margin-left: 2vw;
-    position: relative;
-    background-color:#fff;
-    border-radius: 50%;
-    width: 0.75vw;
-    height: 0.75vw;
 }
 
 .dot:before{    
@@ -313,11 +263,6 @@ footer a {
 }
 
 .line {
-    margin-left: 2.25vw;
-    position: relative;
-    background-color:#fff;
-    width: 0.25vw;
-    height: 100%;
     margin-left: 2.25vw;
     position: relative;
     background-color:#fff;
