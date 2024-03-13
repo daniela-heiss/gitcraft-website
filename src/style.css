@@ -182,7 +182,7 @@ footer a {
     font-size: 14px;
 }
 
-.features-main-container{
+#features-main-container{
     display: grid;
     grid-template-rows: auto auto auto auto auto auto; /* First row takes remaining space */
     grid-template-columns: 7vw 3vw 5vw auto 10vw;
