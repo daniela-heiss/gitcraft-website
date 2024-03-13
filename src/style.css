@@ -294,3 +294,45 @@ header nav a:hover {
     transition: background-color 0.3s ease;
     padding: 15px 20px;
 }
+
+/* CSS für Handy-Ansicht */
+@media screen and (max-width: 600px) {
+    header nav {
+        display: none; /* Verbergen Sie die Hauptnavigation auf mobilen Geräten */
+    }
+
+    /* Zeigen Sie das Dropdown-Symbol */
+    .menu-icon {
+        display: block;
+        margin-right: 5%;
+    }
+}
+
+/* CSS für Desktop */
+@media screen and (min-width: 601px) {
+    /* Verbergen Sie das Dropdown-Symbol auf Desktop */
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* Gemeinsame Stile für Dropdown-Symbol und Dropdown-Menü */
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-red);
+    width: 100%;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Zeigen Sie das Dropdown-Menü, wenn das Dropdown-Symbol angeklickt wird */
+.menu-icon.active + .menu-list {
+    display: block;
+}
