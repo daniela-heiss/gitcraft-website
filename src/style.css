@@ -349,6 +349,52 @@ footer a:hover {
     display: none;
 }
 
+.menuHidden {
+	/*Classes to hide the menu*/
+	display: none;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.menuVisible {
+	display: block;
+	visibility: visible;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+}
+
+ul {
+	/*List for menu buttons*/
+	list-style-type: none;
+	margin: 0;
+	padding: 11px 0 11px 0;
+	z-index: 2;
+	background-color: #5c6376;
+}
+
+li {
+	/*List items for menu*/
+	padding: 0;
+	margin: 2px 8px 2px 8px;
+	background-color: #9e2525;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px inset #c9f5ff;
+	z-index: 2;
+}
+
+li>a {
+	/*Settings for hyperlinks in menu*/
+	color: white;
+	display: block;
+	font-size: 20px;
+	padding: 8px 0;
+}
+
 @media all and (max-width: 1100px) ,all and (min-width: 501px) and (orientation: Portrait) {
     .nav {
         visibility: hidden;
