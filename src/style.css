@@ -6,7 +6,7 @@
     --color-font: #000000;
     --color-white: #fff;
     --color-link: #2b1313;
-    --color-link-hover: #863c3c;
+    --color-link-hover: #ffdbdb;
 
     --box-shadow: 0 2rem 3rem var(--color-shadow);
 }
@@ -65,7 +65,7 @@ header:hover {
 }
 
 .logo-and-title {
-    margin-left: 5rem;
+    margin-left: 5vw;
     display: flex;
     height: 100%;
     align-items: center;
@@ -331,11 +331,19 @@ footer a {
     .nav{
         visibility: hidden;
     }
+    .burger-nav{
+        display: block;
+        visibility: visible; 
+    }
 }
 
 @media all and (max-width: 992px) and (orientation: Portrait){
     .nav{
         visibility: hidden;
+    }
+    .burger-nav{
+        display: block;
+        visibility: visible; 
     }
 
 }
