@@ -83,7 +83,8 @@ header nav a {
 }
 
 header nav a:hover {
-    box-shadow: inset 0px -16px 13px -3px #ee3322;
+    box-shadow: inset 0px -16px 13px -3px #dd2211;
+    border-bottom: 7px solid #ff7766;
 
 }
 
