@@ -125,6 +125,7 @@ header nav a:hover {
 
 #menu-button {
     font-size: 35px;
+    
 }
 
 main {
@@ -357,6 +358,7 @@ footer a:hover {
     .burger-nav {
         display: block;
         visibility: visible;
+        margin-right: 3vw;
     }
 
     footer { 
@@ -369,6 +371,10 @@ footer a:hover {
 
     .logo-and-title{
         margin-left: 1vw;
+    }
+
+    header {
+        gap: 10rem;
     }
 
 }
@@ -382,6 +388,7 @@ footer a:hover {
     .burger-nav {
         display: block;
         visibility: visible;
+        margin-right: 3vw;
     }
 
     footer { 
@@ -394,6 +401,10 @@ footer a:hover {
 
     .logo-and-title{
         margin-left: 1vw;
+    }
+
+    header {
+        gap: 1rem;
     }
     
 
