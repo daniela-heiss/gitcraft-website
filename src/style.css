@@ -46,6 +46,7 @@ header {
     box-shadow: var(--box-shadow);
     z-index: 2;
     height: 8vh;
+    gap: 15rem;
 
 }
 
@@ -59,7 +60,7 @@ header:hover {
 
 .logo a img {
     height: 100%;
-    width: 100%;
+
     object-fit: contain
 }
 
@@ -80,7 +81,7 @@ header:hover {
     text-decoration: none;
 }
 
-.nav {
+/*.nav {
     --bs-nav-link-padding-x: 1rem;
     --bs-nav-link-padding-y: 0;
     --bs-nav-link-font-weight: ;
@@ -92,13 +93,13 @@ header:hover {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-}
+}*/
 
 header nav {
     display: flex;
     justify-content: space-between;
     width: min(50%, 600px);
-    padding-right: 100px;
+    padding-right: 5vw;
     height: 100%;
     align-items: center;
 }
@@ -145,6 +146,7 @@ footer {
     justify-content: space-between;
     padding: 0 64px;
     width: calc(100% - 128px);
+    height: 5vh;
 }
 
 footer a {
@@ -318,4 +320,22 @@ footer a {
 
 .featurescontent {
     margin-top: 1vw;
+}
+
+.burger-nav {
+    visibility: hidden;
+    display: none;
+}
+
+@media all and (max-width: 1100px) and (orientation: Landscape), all and (min-width: 993px) and (orientation: Portrait){
+    .nav{
+        visibility: hidden;
+    }
+}
+
+@media all and (max-width: 992px) and (orientation: Portrait){
+    .nav{
+        visibility: hidden;
+    }
+
 }
