@@ -3,7 +3,7 @@ menuButton.addEventListener("click", toggleMenu);
 
 function toggleMenu()
 {
-        let nav = document.getElementsByClassName("menuHidden")[0]
+        let nav = document.getElementById("menuToggle")
 
         nav.classList.toggle("menuHidden");
         nav.classList.toggle("menuVisible");

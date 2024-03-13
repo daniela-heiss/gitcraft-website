@@ -33,15 +33,19 @@ body {
         sans-serif;
 }
 
-header {
+.header-and-menu{
     grid-area: header_00;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+header {
     align-items: center;
     background-color: var(--color-red);
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    position: sticky;
-    top: 0;
     transition: all 0.3s ease;
     box-shadow: var(--box-shadow);
     z-index: 2;
@@ -372,25 +376,25 @@ ul {
 	margin: 0;
 	padding: 11px 0 11px 0;
 	z-index: 2;
-	background-color: #5c6376;
+	background-color: var(--color-red);
 }
 
 li {
 	/*List items for menu*/
 	padding: 0;
 	margin: 2px 8px 2px 8px;
-	background-color: #9e2525;
+	background-color: var(--color-red);
 	border-radius: 5px;
-	box-shadow: 0px 0px 15px inset #c9f5ff;
 	z-index: 2;
 }
 
 li>a {
 	/*Settings for hyperlinks in menu*/
-	color: white;
+	color: var(--color-link);
 	display: block;
 	font-size: 20px;
 	padding: 8px 0;
+    text-decoration: none;
 }
 
 @media all and (max-width: 1100px) ,all and (min-width: 501px) and (orientation: Portrait) {
@@ -422,6 +426,7 @@ li>a {
         gap: 5rem;
     }
 
+
 }
 
 @media all and (max-width: 500px)  {
@@ -451,6 +456,10 @@ li>a {
 
     header {
         gap: 1rem;
+    }
+
+    body{
+        height: auto;
     }
     
 
