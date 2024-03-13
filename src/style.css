@@ -48,7 +48,7 @@ header {
     height: 8vh;
     gap: 15rem;
     padding-left: 5vw;
-   padding-right: 5vw;
+    padding-right: 5vw;
 
 }
 
@@ -56,8 +56,8 @@ header:hover {
     box-shadow: none;
 }
 
-.logo{
- height: 100%;
+.logo {
+    height: 100%;
 }
 
 .logo a img {
@@ -79,7 +79,7 @@ header:hover {
     color: var(--text_sec);
     font-size: 50px;
     font-weight: 700;
-   /* position: relative;*/
+    /* position: relative;*/
     text-decoration: none;
 }
 
@@ -150,7 +150,7 @@ footer {
     /*width: calc(100% - 128px);*/
     height: 5vh;
     padding-left: 8vw;
-   padding-right: 8vw;
+    padding-right: 8vw;
 }
 
 footer a {
@@ -158,6 +158,11 @@ footer a {
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out
+}
+
+footer a:hover {
+    color: var(--color-link-hover);
 }
 
 .circle-row {
@@ -178,9 +183,9 @@ footer a {
     margin-top: 50px;
     background-color: var(--color-second-background);
     padding: 20px;
-   text-align: center;
-   padding-left: 8vw;
-   padding-right: 8vw;
+    text-align: center;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 
@@ -194,7 +199,7 @@ footer a {
 
     /* (C) COSMETIC - BACKGROUND COLOR */
     background: var(--color-red);
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,33 +228,34 @@ footer a {
     font-size: 14px;
 }
 
-#features-main-container{
+#features-main-container {
     display: grid;
-    grid-template-rows: auto auto auto auto auto auto; /* First row takes remaining space */
+    grid-template-rows: auto auto auto auto auto auto;
+    /* First row takes remaining space */
     grid-template-columns: 3vw 5vw auto 7vw;
     height: 100%;
     padding-left: 8vw;
-   padding-right: 8vw;
+    padding-right: 8vw;
     grid-template-areas:
-    'graph1 branch1 header pad'
-    'graph2 branch2 content1 pad'
-    'graph3 branch3 content2 pad'
-    'graph4 branch4 content3 pad'
-    'graph5 branch5 content4 pad'
-    'graph6 branch6 content5 pad';
+        'graph1 branch1 header pad'
+        'graph2 branch2 content1 pad'
+        'graph3 branch3 content2 pad'
+        'graph4 branch4 content3 pad'
+        'graph5 branch5 content4 pad'
+        'graph6 branch6 content5 pad';
 }
 
 .dot {
     grid-area: graph;
     margin-left: 2vw;
     position: relative;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 50%;
     width: 0.75vw;
     height: 0.75vw;
 }
 
-.dot:before{    
+.dot:before {
     position: absolute;
     content: "";
     position: absolute;
@@ -258,19 +264,19 @@ footer a {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index:-1;
+    z-index: -1;
     box-shadow: 0px 0px 0px 0.25vw #FF4433;
 }
 
 .line {
     margin-left: 2.25vw;
     position: relative;
-    background-color:#fff;
+    background-color: #fff;
     width: 0.25vw;
     height: 100%;
 }
 
-.line:before{    
+.line:before {
     position: absolute;
     content: "";
     position: absolute;
@@ -278,20 +284,20 @@ footer a {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index:-1;
+    z-index: -1;
     box-shadow: 0px 0px 0px 0.25vw #FF4433;
 }
 
 .line2 {
     margin-left: 0.45vw;
     position: relative;
-    background-color:#fff;
+    background-color: #fff;
     width: 0.25vw;
     height: 3vw;
     transform: rotate(-45deg);
 }
 
-.line2:before{    
+.line2:before {
     position: absolute;
     content: "";
     position: absolute;
@@ -299,21 +305,21 @@ footer a {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index:-1;
+    z-index: -1;
     box-shadow: 0px 0px 0px 0.25vw #FF4433;
 }
 
 .dot2 {
     margin-left: 1.45vw;
     position: relative;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 50%;
     width: 0.75vw;
     height: 0.75vw;
     margin-top: 2.4vw;
 }
 
-.dot2:before{    
+.dot2:before {
     position: absolute;
     content: "";
     position: absolute;
@@ -322,7 +328,7 @@ footer a {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index:-1;
+    z-index: -1;
     box-shadow: 0px 0px 0px 0.25vw #FF4433;
 }
 
@@ -335,23 +341,43 @@ footer a {
     display: none;
 }
 
-@media all and (max-width: 1100px) and (orientation: Landscape), all and (min-width: 993px) and (orientation: Portrait){
-    .nav{
+@media all and (max-width: 1100px) and (orientation: Portrait),all and (min-width: 993px) and (orientation: Portrait) {
+    .nav {
         visibility: hidden;
     }
-    .burger-nav{
+
+    .burger-nav {
         display: block;
-        visibility: visible; 
+        visibility: visible;
     }
+
+    footer { 
+        flex-wrap: wrap;  
+    }
+
+    .circle-row{
+        flex-wrap: wrap;
+    }
+
 }
 
-@media all and (max-width: 992px) and (orientation: Portrait){
-    .nav{
+@media all and (max-width: 992px) and (orientation: Portrait) {
+    .nav {
         visibility: hidden;
     }
-    .burger-nav{
+
+    .burger-nav {
         display: block;
-        visibility: visible; 
+        visibility: visible;
     }
+
+    footer { 
+        flex-wrap: wrap;  
+    }
+
+    .circle-row{
+        flex-wrap: wrap;
+    }
+    
 
 }
