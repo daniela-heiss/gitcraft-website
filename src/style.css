@@ -5,6 +5,8 @@
     --color-shadow: rgba(90, 90, 90, 0.18);
     --color-font: #000000;
     --color-white: #fff;
+    --color-link: #2b1313;
+    --color-link-hover: #863c3c;
 
     --box-shadow: 0 2rem 3rem var(--color-shadow);
 }
@@ -42,6 +44,8 @@ header {
     top: 0;
     transition: all 0.3s ease;
     box-shadow: var(--box-shadow);
+    z-index: 2;
+    height: 8vh;
 
 }
 
@@ -49,27 +53,71 @@ header:hover {
     box-shadow: none;
 }
 
-header nav {
+.logo{
+ height: 100%;
+}
+
+.logo a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain
+}
+
+.logo-and-title {
+    margin-left: 5rem;
     display: flex;
-    justify-content: space-between;
-    width: min(50%, 600px);
-    padding-right: 100px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
 #title-name {
     color: var(--text_sec);
     font-size: 50px;
     font-weight: 700;
-    position: relative;
+   /* position: relative;*/
     text-decoration: none;
 }
 
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-link-color);
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: #798490;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: min(50%, 600px);
+    padding-right: 100px;
+    height: 100%;
+    align-items: center;
+}
+
 header nav a {
-    color: var(--text_sec);
+    color: var(--color-link);
     font-size: 20px;
     font-weight: 700;
     position: relative;
     text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out
+}
+
+header nav a:hover {
+    color: var(--color-link-hover);
 }
 
 main {
@@ -86,7 +134,7 @@ main {
 footer {
     grid-area: footer_00;
     position: relative;
-    background-color: #FF4433;
+    background-color: var(--color-red);
     background-repeat: no-repeat;
     background-position: center;
     flex-wrap: wrap;
@@ -100,7 +148,7 @@ footer {
 }
 
 footer a {
-    color: black;
+    color: var(--color-link);
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
@@ -124,6 +172,7 @@ footer a {
     margin-top: 50px;
     background-color: var(--color-second-background);
     padding: 20px;
+   text-align: center;
 }
 
 
@@ -136,7 +185,7 @@ footer a {
     border-radius: 50%;
 
     /* (C) COSMETIC - BACKGROUND COLOR */
-    background: #FF4433;
+    background: var(--color-red);
     
     display: flex;
     flex-direction: column;
