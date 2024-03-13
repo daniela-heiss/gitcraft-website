@@ -289,8 +289,8 @@ footer a {
     margin-right: 7%;
 }
 header nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Hintergrundfarbe im Hover-Zustand */
-    border-radius: 5px; /* Optional: Runden Sie die Ecken ab */
-    transition: background-color 0.3s ease; /* Fügen Sie eine sanfte Übergangseffekt hinzu */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
     padding: 15px 20px;
 }
