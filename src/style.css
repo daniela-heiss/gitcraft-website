@@ -47,6 +47,8 @@ header {
     z-index: 2;
     height: 8vh;
     gap: 15rem;
+    padding-left: 5vw;
+   padding-right: 5vw;
 
 }
 
@@ -145,8 +147,10 @@ footer {
     height: 40px;
     justify-content: space-between;
     padding: 0 64px;
-    width: calc(100% - 128px);
+    /*width: calc(100% - 128px);*/
     height: 5vh;
+    padding-left: 8vw;
+   padding-right: 8vw;
 }
 
 footer a {
@@ -175,6 +179,8 @@ footer a {
     background-color: var(--color-second-background);
     padding: 20px;
    text-align: center;
+   padding-left: 8vw;
+   padding-right: 8vw;
 }
 
 
@@ -222,6 +228,8 @@ footer a {
     grid-template-rows: auto auto auto auto auto auto; /* First row takes remaining space */
     grid-template-columns: 3vw 5vw auto 7vw;
     height: 100%;
+    padding-left: 8vw;
+   padding-right: 8vw;
     grid-template-areas:
     'graph1 branch1 header pad'
     'graph2 branch2 content1 pad'
