@@ -242,12 +242,11 @@ footer span {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
+   
     padding-left: 8vw;
     padding-right: 8vw;
     margin-top: 8vh;
     padding-bottom: 8vh;
-    width: 100vw;
 }
 
 .team-container h1 {
@@ -277,7 +276,6 @@ footer span {
     /*padding-left: 8vh;
     padding-right: 8vh;*/
     margin-top: 3vh;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -511,6 +509,10 @@ all and (min-width: 501px) and (orientation: Portrait) {
         flex-wrap: wrap;
     }
 
+    .team-row {
+        flex-wrap: wrap;
+    }
+
     .logo-and-title {
         margin-left: 1vw;
         gap: 1rem;
@@ -539,6 +541,10 @@ all and (min-width: 501px) and (orientation: Portrait) {
     }
 
     .circle-row {
+        flex-wrap: wrap;
+    }
+
+    .team-row {
         flex-wrap: wrap;
     }
 
