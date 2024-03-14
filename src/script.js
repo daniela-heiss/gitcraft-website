@@ -2,6 +2,12 @@ function createDivs() {
         const container = document.getElementById("features-main-container");
         let numberOfIterations = 6;
 
+        const divstart = document.createElement("div");
+                divstart.id = "graphstart";
+                divstart.style.gridArea = "graph1";
+
+                container.appendChild(divstart);
+
                 const divline = document.createElement("div");
                 divline.id = "line";
                 divline.style.gridArea = "graph1";

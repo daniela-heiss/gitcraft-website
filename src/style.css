@@ -331,7 +331,7 @@ iframe{
     grid-template-rows: fr1 fr3 fr3 fr3 fr3 fr3;
     /* First row takes remaining space */
     grid-template-columns: 3vw 5vw auto;
-    height: 100%;
+    height: auto;
     margin-top:5vh;
     padding-left: 8vw;
     padding-right: 8vw;
@@ -343,8 +343,10 @@ iframe{
         'graph5 branch5 content4'
         'graph6 branch6 content5';
 }
+
 #features-main-container h1{
-        margin: 0;
+        margin-bottom: 3rem;
+        margin-top: -1rem;
 }
 
 #line {
@@ -439,6 +441,28 @@ iframe{
     width: 0.75vw;
     height: 0.75vw;
     margin-top: 2.4vw;
+}
+
+#graphstart {
+    grid-area: graph;
+    margin-left: 2vw;
+    position: relative;
+    background-color: #fff;
+    width: 0.75vw;
+    height: 0.75vw;
+    transform: rotate(-45deg);
+}
+
+#graphstart:before {
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    box-shadow: 0px 0px 0px 0.25vw #FF4433;
 }
 
 .dot2:before {
