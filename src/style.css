@@ -239,7 +239,8 @@ footer span {
 }
 
 .team-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     padding-left: 8vw;
@@ -552,7 +553,6 @@ all and (min-width: 501px) and (orientation: Portrait) {
 
     body {
         height: auto;
-        width: auto;
     }
 
 
