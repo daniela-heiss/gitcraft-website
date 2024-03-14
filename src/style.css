@@ -23,7 +23,7 @@ body {
         "main_00"
         "footer_00";
     width: 100vw;
-    height: 100vh;
+    height: auto;
     font-size: 0.88rem;
     user-select: none;
     overflow-x: hidden;
@@ -243,8 +243,8 @@ footer span {
     flex-direction: column;
     text-align: center;
    
-    padding-left: 8vw;
-    padding-right: 8vw;
+    /*padding-left: 8vw;
+    padding-right: 8vw;*/
     margin-top: 8vh;
     padding-bottom: 8vh;
 }
