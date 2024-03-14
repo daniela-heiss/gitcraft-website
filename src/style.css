@@ -23,7 +23,7 @@ body {
         "main_00"
         "footer_00";
     width: 100vw;
-    height: auto;
+    height: 100vh;
     font-size: 0.88rem;
     user-select: none;
     overflow-x: hidden;
@@ -195,9 +195,13 @@ footer span {
     background-color: var(--color-second-background);
     padding: 20px;
     text-align: center;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     display: inline-block;
+}
+
+.main-text-area p {
+    font-size: 20px;
 }
 
 
@@ -295,7 +299,7 @@ footer span {
     color: #693232
 }
 
-.video {
+.video-container {
     padding-top: 8vh;
     background-color: var(--color-second-background);
     padding: 20px;
@@ -305,8 +309,21 @@ footer span {
     padding-bottom: 8vh;
 }
 
-.video h1 {
+.video-container h1 {
     padding-bottom: 5vh;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #features-main-container {
