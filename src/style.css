@@ -80,11 +80,15 @@ header:hover {
 }
 
 #title-name {
-    color: var(--text_sec);
+    color: var(--color-link);
     font-size: 50px;
     font-weight: 700;
     /* position: relative;*/
     text-decoration: none;
+}
+
+#title-name:hover {
+    color: var(--color-link-hover)
 }
 
 /*.nav {
@@ -139,7 +143,7 @@ main {
 
 .index-main-container {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto auto;
 
     height: 100%;
 }
@@ -167,13 +171,20 @@ footer {
 footer a {
     color: var(--color-link);
     cursor: pointer;
+    color: var(--color-link);
     font-size: 20px;
+    font-weight: 700;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out
 }
 
 footer a:hover {
     color: var(--color-link-hover);
+}
+
+footer span {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .circle-row {
@@ -207,7 +218,7 @@ footer a:hover {
     height: 200px;
 
     /* (B) CIRCLE - 50% RADIUS */
-    border-radius: 50%;
+    border-radius: 20%;
 
     /* (C) COSMETIC - BACKGROUND COLOR */
     background: var(--color-red);
@@ -240,21 +251,89 @@ footer a:hover {
     font-size: 14px;
 }
 
+.team-container {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+.team-container h1{
+    padding-bottom: 5vh;
+}
+
+.team-member h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.team-member p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.team-member .circle-text{
+    margin-top: 0px;
+}
+
+.team-row {
+    display: flex;
+    flex-direction: row;
+   /* justify-content: space-around;*/
+    gap: 3vw;
+    /*padding-left: 8vh;
+    padding-right: 8vh;*/
+    margin-top: 3vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+}
+
+.team-member p{
+    color: #693232 
+}
+
+.video {
+    padding-top: 8vh;
+    background-color: var(--color-second-background);
+    padding: 20px;
+    text-align: center;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-bottom: 8vh;
+}
+
+.video h1{
+    padding-bottom: 5vh;
+}
 #features-main-container {
     display: grid;
     grid-template-rows: auto auto auto auto auto auto;
     /* First row takes remaining space */
-    grid-template-columns: 3vw 5vw auto 7vw;
+    grid-template-columns: 3vw 5vw auto;
     height: 100%;
     padding-left: 8vw;
     padding-right: 8vw;
     grid-template-areas:
-        'graph1 branch1 header pad'
-        'graph2 branch2 content1 pad'
-        'graph3 branch3 content2 pad'
-        'graph4 branch4 content3 pad'
-        'graph5 branch5 content4 pad'
-        'graph6 branch6 content5 pad';
+        'graph1 branch1 header'
+        'graph2 branch2 content1'
+        'graph3 branch3 content2'
+        'graph4 branch4 content3'
+        'graph5 branch5 content4'
+        'graph6 branch6 content5';
 }
 
 .dot {
@@ -425,7 +504,6 @@ li>a {
     header {
         gap: 5rem;
     }
-
 
 }
 
