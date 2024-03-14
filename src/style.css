@@ -445,6 +445,7 @@ iframe{
 
 #graphstart {
     grid-area: graph;
+    margin-top: -0.375vw;
     margin-left: 2vw;
     position: relative;
     background-color: #fff;
@@ -604,6 +605,10 @@ all and (min-width: 501px) and (orientation: Portrait) {
     body {
         height: auto;
     }
+
+    #line, .dot, .line, .line2, .dot2, #line:before, .dot:before, .line:before, .line2:before, .dot2:before, #graphstart, #graphstart:before{
+        display: none;
+}
 
 
 }
