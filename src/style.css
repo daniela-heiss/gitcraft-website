@@ -246,10 +246,17 @@ footer span {
     font-size: 14px;
 }
 
+
+.screenshot_container h1 {
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
 .team-container {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: var(--color-second-background);
 
     /*padding-left: 8vw;
     padding-right: 8vw;*/
@@ -312,7 +319,6 @@ footer span {
 
 .video-container {
     padding-top: 8vh;
-    background-color: var(--color-second-background);
     padding: 20px;
     text-align: center;
     padding-left: 8vw;
@@ -563,6 +569,10 @@ li>a {
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+  width:100%;
 }
 
 /* Next & previous buttons */
