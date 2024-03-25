@@ -246,8 +246,11 @@ footer span {
     font-size: 14px;
 }
 
+.screenshot-container {
+    padding-top: 20px;
+}
 
-.screenshot_container h1 {
+.screenshot-container h1 {
     padding-bottom: 5vh;
     text-align: center;
 }
@@ -262,6 +265,7 @@ footer span {
     padding-right: 8vw;*/
     margin-top: 8vh;
     padding-bottom: 8vh;
+    padding-top: 20px;
 }
 
 .team-container h1 {
@@ -735,6 +739,11 @@ all and (min-width: 501px) and (orientation: Portrait) {
     #graphstart,
     #graphstart:before {
         display: none;
+    }
+
+    #features-main-container h1 {
+        margin-bottom: 1rem;
+        margin-top: -1rem;
     }
 
 
