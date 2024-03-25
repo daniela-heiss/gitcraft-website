@@ -743,7 +743,8 @@ all and (min-width: 501px) and (orientation: Portrait) {
 
     #features-main-container h1 {
         margin-bottom: 1rem;
-        margin-top: -1rem;
+        margin-top: -1rem;      
+        grid-template-columns: auto auto auto;
     }
 
 
